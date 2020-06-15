@@ -6,7 +6,8 @@ Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file
 
 ## TODO LIST
 
-- [ ] Main index page
+- [ ] Configure Gulp
+- [x] Main index page
 - [x] ACNH song web scrapper
 - [x] ACNH song video scrapper
 
