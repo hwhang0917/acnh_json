@@ -1,0 +1,16 @@
+{
+  "name": "acnh_json",
+  "version": "1.0.0",
+  "repository": "git@github.com:hwhang0917/acnh_json.git",
+  "author": "Mark Whang <hwhang0917@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.0.0"
+  },
+  "scripts": {
+    "scrape": "❌ Not implemented yet",
+    "copyAll": "cp -R src/index.html dist && cp -R src/api dist",
+    "deploy": "node deployer.js",
+    "predeploy": "copyAll"
+  }
+}
