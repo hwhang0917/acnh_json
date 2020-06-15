@@ -11,6 +11,6 @@
     "scrape": "❌ Not implemented yet",
     "copyAll": "cp -R src/index.html dist && cp -R src/api dist",
     "deploy": "node deployer.js",
-    "predeploy": "copyAll"
+    "predeploy": "rm -rf dist && yarn copyAll"
   }
 }
