@@ -6,14 +6,14 @@
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "^3.0.0",
-    "gulp": "^4.0.2"
+    "live-server": "^1.2.1"
   },
   "scripts": {
-    "scrape": "❌ Not implemented yet: This script should run Python scrapper",
-    "copyAll": "cp -R ./src/index.html ./dist && cp -R src/api ./dist",
-    "build": "yarn copyAll",
+    "scrape": "❌ Not implemented yet: This script should run Python scrapper && yarn copyJSON",
+    "build": "cp -R ./src/* ./dist",
     "prebuild": "rm -rf dist/*",
     "deploy": "node deployer.js",
-    "predeploy": "yarn build"
+    "predeploy": "yarn build",
+    "dev:watch": "live-server ./src"
   }
 }

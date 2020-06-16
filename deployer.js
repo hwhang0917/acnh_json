@@ -11,5 +11,9 @@ var options = {
 };
 
 ghpages.publish("dist", options, (err) => {
-  console.log(`❌ Failed to deploy to GitHub Pages! ${err}`);
+  if (err) {
+    console.log(`❌ Failed to deploy to GitHub Pages! ${err}`);
+  } else {
+    console.log(`✅ Deployed to https://hwhang0917.github.io/acnh_json/`);
+  }
 });
