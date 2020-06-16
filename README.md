@@ -16,3 +16,5 @@ Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file
 ```
 pip install -r requirements.txt
 ```
+
+## [Deployment via Github Pages](https://hwhang0917.github.io/acnh_json/)
