@@ -11,3 +11,4 @@ songs = get_songs()
 print("[main.py] Writing as JSON file...")
 with open(songJsonLink, "w", encoding="UTF-8") as file:
     file.write(json.dumps(songs, ensure_ascii=False))
+    file.close()

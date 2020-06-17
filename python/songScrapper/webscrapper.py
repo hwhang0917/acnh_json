@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from uuid import uuid4
 from vidscrapper import get_youtube_links
 
 NAMU_URL = "https://namu.wiki/w/%EB%8F%99%EB%AC%BC%EC%9D%98%20%EC%88%B2%20%EC%8B%9C%EB%A6%AC%EC%A6%88/%EB%85%B8%EB%9E%98%20%EB%AA%A9%EB%A1%9D"
@@ -26,6 +27,7 @@ def get_songs():
     # Scrape songs from table
     for song_tr in song_trs[1:96]:
         song = {
+            "id": "_" + str(uuid4()).split("-")[0],
             "kor_title": "",
             "eng_title": "",
             "thumbnail": "",
