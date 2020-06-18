@@ -27,9 +27,7 @@ with open(originDir, "r", encoding="UTF-8") as file:
     file.close()
 
 for newSong in newSongs:
-    newFolder = apiBaseLink + newSong["id"]
-    os.mkdir(newFolder)
-    newDir = newFolder + "/index.json"
+    newDir = apiBaseLink + newSong["id"] + ".json"
     # Open file as Write mode
     with open(newDir, "w", encoding="UTF-8") as file:
         file.write(json.dumps(newSong, ensure_ascii=False))
