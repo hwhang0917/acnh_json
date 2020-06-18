@@ -22,7 +22,7 @@
       <hr />
       <section>
         <aside>
-          <h3>모여봐요 동물의 숲 노래 JSON</h3>
+          <h3>모동숲 노래 JSON</h3>
           <h4 class="json-link">/api/acnh_songs.json</h4>
           <a href="./api/acnh_songs.json"><i>JSON 받아오기</i></a>
           <details>
@@ -45,12 +45,27 @@
           </details>
         </aside>
         <aside>
-          <h3>준비중 ...</h3>
-          <h4 class="json-link">준비중 ...</h4>
-          <a href="#"><i>JSON 받아오기</i></a>
+          <h3>모동숲 노래 유튜브 JSON</h3>
+          <h4 class="json-link">/api/songVids/:id.json</h4>
+          <a href="./api/songVids/_0371292b.json"><i>JSON 받아오기</i></a>
+          <p><small>* 예제의 ID: _0371292b</small></p>
           <details>
             <summary>JSON 형식 예제</summary>
-            <div class="details"></div>
+            <div class="details">
+              {<br />
+              "id": "<small>Unique ID</small>",<br />
+              "title": "",<br />
+              "youtube": ""<br />
+              }
+            </div>
+            <details>
+              <summary>유튜브 Array 형식 예제</summary>
+              <div class="details">
+                <small>* 유튜브 Array size는 5로 고정</small><br />
+                [{<br />"title": "",<br />
+                "link": ""<br />}]
+              </div>
+            </details>
           </details>
         </aside>
         <aside>
