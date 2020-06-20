@@ -8,7 +8,10 @@ Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file
 
 - [x] Main index page
 - [x] ACNH song web scrapper
-- [x] ACNH song video scrapper
+- [x] ~~ACNH song video scrapper~~
+- [x] ACNH song info scrapper
+- [x] [imgdb](https://imgbb.com/) cloud storage of thumbnails
+- [x] Get flac file link from [Nookipedia](http://nookipedia.com/)
 - [x] Deployment
 
 ## Python dependencies
