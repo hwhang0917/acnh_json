@@ -17,4 +17,6 @@ Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file
 pip install -r requirements.txt
 ```
 
+- Requires *.env* file in order to run python scripts check [.env.sample](.env.sample) for template.
+
 ## [Deployment via Github Pages](https://hwhang0917.github.io/acnh_json/)
