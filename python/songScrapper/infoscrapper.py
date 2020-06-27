@@ -10,19 +10,19 @@ imgdbAPI = "https://api.imgbb.com/1/upload"
 nook_base_url = "https://nookipedia.com"
 API_KEY = os.getenv("IMGDB_APIKEY")
 
-def save_img(url):
-    '''
-    Saves given image URL to imgdb and returns the stored URL
-    '''    
-    params = {"key": API_KEY, "image": url}
-    results = requests.post(imgdbAPI, params=params)
+# def save_img(url):
+#     '''
+#     Saves given image URL to imgdb and returns the stored URL
+#     '''    
+#     params = {"key": API_KEY, "image": url}
+#     results = requests.post(imgdbAPI, params=params)
     
-    if (results.status_code >= 400):
-        print(f"[imgscrapper.py] Error failed to upload thumbnail at imgdb!")
-        print(results.json()["error"]["message"])
-        return None
-    else:
-        return results.json()['data']['url']
+#     if (results.status_code >= 400):
+#         print(f"[imgscrapper.py] Error failed to upload thumbnail at imgdb!")
+#         print(results.json()["error"]["message"])
+#         return None
+#     else:
+#         return results.json()['data']['url']
 
 def get_song_info(title):
     '''
@@ -57,8 +57,6 @@ def get_song_info(title):
     img_anchor = img_div.find("a")
     
     full_img_url = img_anchor["href"]
-    print(f"[infoscrapper.py] Uploading {title} to imgdb...")
-    
-    info["thumbnail"] = save_img(full_img_url)
+    info["thumbnail"] = full_img_url
     
     return info

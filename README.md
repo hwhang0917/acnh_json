@@ -13,6 +13,9 @@ Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file
 - [x] [imgdb](https://imgbb.com/) cloud storage of thumbnails
 - [x] Get flac file link from [Nookipedia](http://nookipedia.com/)
 - [x] Deployment
+- [x] AWS Lambda (Chalice)
+- [ ] AWS deployment
+- [ ] Faster scrapping (multiporcessing ?)
 
 ## Python dependencies
 
@@ -20,6 +23,6 @@ Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file
 pip install -r requirements.txt
 ```
 
-- Requires *.env* file in order to run python scripts check [.env.sample](.env.sample) for template.
+- Requires _.env_ file in order to run python scripts check [.env.sample](.env.sample) for template.
 
 ## [Deployment via Github Pages](https://hwhang0917.github.io/acnh_json/)
