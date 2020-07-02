@@ -2,7 +2,8 @@
 
 ## Overview
 
-Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file through GitHub Page.
+~~Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file through GitHub Page.~~
+Animal Crossing: New Horizon related web scrapper
 
 ## TODO LIST
 
@@ -15,7 +16,8 @@ Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file
 - [x] Deployment
 - [x] AWS Lambda (Chalice)
 - [ ] AWS deployment
-- [ ] Faster scrapping (multiporcessing ?)
+- [ ] Faster scrapping ~~(multiporcessing ?)~~
+- [ ] Golang scrapper
 
 ## Python dependencies
 
