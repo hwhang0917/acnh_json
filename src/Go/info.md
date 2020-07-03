@@ -5,3 +5,4 @@ Created faster version of webscrapping via go-routine. Does the same process as 
 ## Go Dependencies
 
 - [Goquery](https://github.com/PuerkitoBio/goquery)
+- [Echo](https://echo.labstack.com/)

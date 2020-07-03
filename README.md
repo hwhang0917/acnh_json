@@ -23,9 +23,9 @@ Animal Crossing: New Horizon related web scrapper
 - [x] Get flac file link from [Nookipedia](http://nookipedia.com/)
 - [x] Deployment
 - [x] AWS Lambda (Chalice)
-- [ ] AWS deployment
 - [x] Faster scrapping ~~(multiporcessing ?)~~
 - [x] Golang scrapper
-- [ ] Go-scrapper Repl.it Deployment
+- [x] Go-scrapper Repl.it Deployment
+- [ ] AWS deployment
 
 ## [Deployment via Github Pages](https://hwhang0917.github.io/acnh_json/)

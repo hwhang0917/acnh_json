@@ -15,8 +15,8 @@ import (
 
 // Music type
 type Music struct {
-	Aircheck string
-	Live     string
+	Aircheck string `json:"aircheck"`
+	Live     string `json:"live"`
 }
 
 // SongInfo type
@@ -27,11 +27,11 @@ type SongInfo struct {
 
 // Song type
 type Song struct {
-	ID        string
-	KORTitle  string
-	ENGTitle  string
-	Thumbnail string
-	Music     Music
+	ID        string `json:"id"`
+	KORTitle  string `json:"kor_title"`
+	ENGTitle  string `json:"eng_title"`
+	Thumbnail string `json:"thumbnail"`
+	Music     Music  `json:"music"`
 }
 
 const namuWikiBaseURL string = "https://namu.wiki/w/%EB%8F%99%EB%AC%BC%EC%9D%98%20%EC%88%B2%20%EC%8B%9C%EB%A6%AC%EC%A6%88/%EB%85%B8%EB%9E%98%20%EB%AA%A9%EB%A1%9D"
@@ -47,7 +47,7 @@ func generateRandomID(length int) string {
 }
 
 func getInfo(engTitle string, c chan SongInfo) {
-	fmt.Println("Getting Music: ", engTitle)
+	fmt.Println("[main.go] Scrapping ", engTitle, " from nookipedia...")
 
 	// Create Nook URL
 	url := nookBaseURL + "/wiki/" + strings.Replace(engTitle, " ", "_", -1)
@@ -182,5 +182,5 @@ func main() {
 		checkErr(err)
 		return c.String(http.StatusOK, string(songsJSON))
 	})
-	e.Logger.Fatal(e.Start(":8000"))
+	e.Logger.Fatal(e.Start(":"))
 }
