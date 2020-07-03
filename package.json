@@ -10,7 +10,7 @@
   },
   "scripts": {
     "scrape": "❌ Not implemented yet: This script should run Python scrapper && yarn copyJSON",
-    "build": "cp -R ./src/* ./dist",
+    "build": "cp -R ./web/* ./dist",
     "prebuild": "rm -rf dist/*",
     "deploy": "node deployer.js",
     "predeploy": "yarn build",

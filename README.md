@@ -2,7 +2,16 @@
 
 ## Overview
 
-Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file through GitHub Page.
+~~Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file through GitHub Page.~~
+Animal Crossing: New Horizon related web scrapper
+
+## Project Structure
+
+- /src
+  - /src/Go
+    - Web scrapper written with [Go]()
+  - /src/python
+    - Web scrapper written with [Python](./src/python/info.md)
 
 ## TODO LIST
 
@@ -13,13 +22,9 @@ Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file
 - [x] [imgdb](https://imgbb.com/) cloud storage of thumbnails
 - [x] Get flac file link from [Nookipedia](http://nookipedia.com/)
 - [x] Deployment
-
-## Python dependencies
-
-```
-pip install -r requirements.txt
-```
-
-- Requires *.env* file in order to run python scripts check [.env.sample](.env.sample) for template.
+- [x] AWS Lambda (Chalice)
+- [ ] AWS deployment
+- [x] Faster scrapping ~~(multiporcessing ?)~~
+- [x] Golang scrapper
 
 ## [Deployment via Github Pages](https://hwhang0917.github.io/acnh_json/)
