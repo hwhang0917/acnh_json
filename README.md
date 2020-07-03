@@ -5,6 +5,14 @@
 ~~Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file through GitHub Page.~~
 Animal Crossing: New Horizon related web scrapper
 
+## Project Structure
+
+- /src
+  - /src/Go
+    - Web scrapper written with [Go]()
+  - /src/python
+    - Web scrapper written with [Python](./src/python/info.md)
+
 ## TODO LIST
 
 - [x] Main index page
@@ -18,13 +26,5 @@ Animal Crossing: New Horizon related web scrapper
 - [ ] AWS deployment
 - [ ] Faster scrapping ~~(multiporcessing ?)~~
 - [ ] Golang scrapper
-
-## Python dependencies
-
-```
-pip install -r requirements.txt
-```
-
-- Requires _.env_ file in order to run python scripts check [.env.sample](.env.sample) for template.
 
 ## [Deployment via Github Pages](https://hwhang0917.github.io/acnh_json/)
