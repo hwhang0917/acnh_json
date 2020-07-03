@@ -24,7 +24,7 @@ Animal Crossing: New Horizon related web scrapper
 - [x] Deployment
 - [x] AWS Lambda (Chalice)
 - [ ] AWS deployment
-- [ ] Faster scrapping ~~(multiporcessing ?)~~
-- [ ] Golang scrapper
+- [x] Faster scrapping ~~(multiporcessing ?)~~
+- [x] Golang scrapper
 
 ## [Deployment via Github Pages](https://hwhang0917.github.io/acnh_json/)
