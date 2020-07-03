@@ -8,6 +8,8 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/labstack/echo"
+
 	"github.com/PuerkitoBio/goquery"
 )
 
@@ -173,8 +175,12 @@ func checkStatus(res *http.Response) {
 }
 
 func main() {
-	songs := getSongs()
-	songsJSON, err := json.Marshal(songs)
-	checkErr(err)
-	fmt.Println(string(songsJSON))
+	e := echo.New()
+	e.GET("/", func(c echo.Context) error {
+		songs := getSongs()
+		songsJSON, err := json.Marshal(songs)
+		checkErr(err)
+		return c.String(http.StatusOK, string(songsJSON))
+	})
+	e.Logger.Fatal(e.Start(":8000"))
 }
