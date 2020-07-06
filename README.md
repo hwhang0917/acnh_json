@@ -26,6 +26,6 @@ Animal Crossing: New Horizon related web scrapper
 - [x] Faster scrapping ~~(multiporcessing ?)~~
 - [x] Golang scrapper
 - [x] Go-scrapper Repl.it Deployment
-- [ ] AWS deployment
+- [x] Google Cloud Functions Deployment
 
 ## [Deployment via Github Pages](https://hwhang0917.github.io/acnh_json/)
