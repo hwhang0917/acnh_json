@@ -174,6 +174,12 @@ func checkStatus(res *http.Response) {
 
 // Scrape and output JSON
 func Scrape(w http.ResponseWriter, r *http.Request) {
+	// Set CORS headers for the preflight request
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "GET")
+	w.Header().Set("Content-Type", "application/json")
+
+	// Scrape songs
 	songs := getSongs()
 	songsJSON, err := json.Marshal(songs)
 
