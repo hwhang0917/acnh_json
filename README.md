@@ -1,5 +1,8 @@
 # Animal Crossing New Horizon: Web scrapper & JSON server
 
+[![Author](https://img.shields.io/badge/author-hwhang0917-green?style=flat)](https://github.com/hwhang0917/acnh_json)
+[![License](https://img.shields.io/github/license/hwhang0917/acnh_json)](https://github.com/hwhang0917/acnh_json/blob/dev/LICENSE)
+
 ## Overview
 
 ~~Web scrapping using BeautifulSoup4 with Python, then serving organized JSON file through GitHub Page.~~<br>
