@@ -24,3 +24,7 @@ body {
 .json-link:hover {
   transform: scale(1.05);
 }
+
+.disabled-title {
+  text-decoration: line-through;
+}
